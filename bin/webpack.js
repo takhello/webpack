@@ -61,6 +61,7 @@ const isInstalled = packageName => {
  * @returns {void}
  */
 const runCli = cli => {
+	console.log("runCli");
 	const path = require("path");
 	const pkgPath = require.resolve(`${cli.package}/package.json`);
 	// eslint-disable-next-line node/no-missing-require
